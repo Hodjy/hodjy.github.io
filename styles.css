@@ -1,7 +1,34 @@
-.placeholder {
-    background-color: royalblue;
+.navWrapper {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
 }
 
-.secondPlaceholder {
-    background-color: saddlebrown;
+.topLeft {
+    display: flex;
+}
+
+.navWrapper > .topLeft > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.navLinkWrapper {
+    height : 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navLinkWrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navLinkWrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.navLinkWrapper:hover a {
+    color: black;
 }
