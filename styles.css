@@ -87,6 +87,12 @@ body {
 .logoWrapper img {
     width: 200%;
     margin-bottom: 20px;
+    opacity: 0;
+}
+
+.imgTextWrapper:hover .logoWrapper img {
+    transition: 1s;
+    opacity: 1;
 }
 
 .imgTextWrapper .subtitle {
