@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Hods Portfolio</title>
+        <title>Gnomes Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
 
@@ -10,7 +11,7 @@
         <div class="container">
             <div class="navWrapper">
                 <div class="topLeft">
-                    <div class="navLinkWrapper">
+                    <div class="navLinkWrapper activeNavLink">
                         <a href="index.html">Home</a>
                     </div>
 
@@ -21,10 +22,113 @@
 
                 <div class="topRight">
                     <div class="owner">
-                        <div>Hod Yaakov</div>
+                        <div>Gnome Yaakov</div>
                     </div>
                 </div>
             </div>
+
+            <div class="contentWrapper">
+                <div class="portfolioItemsWrapper">
+                    
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome1.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome2.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome3.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome4.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome5.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolioItemWrapper">
+                        <div class="portfolioImgBackground" style="background-image:url(Images/Gnome/Gnome6.jpg)"></div>
+
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/Icons/icon1.png">
+                            </div>
+
+                            <div class="subtitle">
+                                A small and cool Gnome.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolioItemWrapper')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('imgDarken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('imgDarken');
+            })
+        })
+    </script>
 </html>
